@@ -4,7 +4,7 @@ N = math.factorial(100) / (math.factorial(r) * math.factorial(100 - r))
 n = 90
 NA = math.factorial(n) / (math.factorial(r) * math.factorial(n - r))
 X = NA / N
-while X > 0.001:
+while X > 0.01:
     r += 1
     N = math.factorial(100) / (math.factorial(r) * math.factorial(100 - r))
     NA = math.factorial(n) / (math.factorial(r) * math.factorial(n - r))

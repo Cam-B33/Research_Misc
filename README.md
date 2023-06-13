@@ -13,3 +13,5 @@ Serrao, N.R., Reid, S.M. & Wilson, C.C. Establishing detection thresholds for en
 Youden WJ (1950) Index for rating diagnostic tests. Cancer 3:32–35
 
 ## extraction_qubit.py
+When extracting DNA from a tissue or filter sample, it is common practice to quantify the amount of double-stranded (ds) DNA present by "Qubiting" the final extraction elution. However, this process can be expensive and time-consuming, particularly when dealing with a large number of samples. To reduce the time and cost of using the Qubit, this script allows the user to use it as a qualitative tool to assess the effectiveness of the DNA extraction.
+In this case, there are 100 DNA extractions in a batch, but I want to avoid Qubiting every sample due to its cost and time requirements. Instead, I want to determine the number of samples I need to Qubit (r) out of the 100 total samples, such that there is a 99% probability (1-X) that at least 90 (n) of the DNA extractions have useable concentrations of dsDNA. Use may change r, n and X values as necessary. 
